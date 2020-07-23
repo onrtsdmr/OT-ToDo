@@ -3,7 +3,7 @@ using OTProje.ToDo.Entities.Interface;
 
 namespace OTProje.ToDo.Entities.Concrete
 {
-    public class User: ITable
+    public class User : ITable
     {
         public int Id { get; set; }
         public string FirstName { get; set; }

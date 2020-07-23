@@ -8,4 +8,15 @@
       <ProjectReference Include="..\OTProje.ToDo.Entities\OTProje.ToDo.Entities.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Concrete\Dapper" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.6" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.6" />
+      <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.2" />
+    </ItemGroup>
+
 </Project>
