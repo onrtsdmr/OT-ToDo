@@ -6,7 +6,7 @@ using OTProje.ToDo.Entities.Interface;
 
 namespace OTProje.ToDo.DataAccess.Concrete.EFCore.Repositories
 {
-    public class EfGenericRepository<TEntity, TContext> : IGenericRepository<TEntity>
+    public class EfGenericRepository<TEntity, TContext> : IGenericDal<TEntity>
         where TEntity : class, ITable, new()
         where TContext : DbContext, new()
     {

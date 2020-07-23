@@ -4,7 +4,7 @@ using OTProje.ToDo.Entities.Concrete;
 
 namespace OTProje.ToDo.DataAccess.Concrete.EFCore.Repositories
 {
-    public class EfUserRepository : EfGenericRepository<User, ToDoContext>, IUserRepository
+    public class EfUserRepository : EfGenericRepository<User, ToDoContext>, IUserDal
     {
     }
 }

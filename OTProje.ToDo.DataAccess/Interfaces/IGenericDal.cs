@@ -3,7 +3,7 @@ using OTProje.ToDo.Entities.Interface;
 
 namespace OTProje.ToDo.DataAccess.Interfaces
 {
-    public interface IGenericRepository<TEntity> where TEntity: class, ITable, new()
+    public interface IGenericDal<TEntity> where TEntity: class, ITable, new()
     {
         void Create(TEntity entity);
         void Delete(TEntity entity);

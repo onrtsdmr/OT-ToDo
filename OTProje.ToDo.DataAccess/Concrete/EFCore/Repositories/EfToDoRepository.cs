@@ -3,7 +3,7 @@ using OTProje.ToDo.DataAccess.Interfaces;
 
 namespace OTProje.ToDo.DataAccess.Concrete.EFCore.Repositories
 {
-    public class EfToDoRepository : EfGenericRepository<Entities.Concrete.ToDo, ToDoContext>, IToDoRepository
+    public class EfToDoRepository : EfGenericRepository<Entities.Concrete.ToDo, ToDoContext>, IToDoDal
     {
     }
 }
