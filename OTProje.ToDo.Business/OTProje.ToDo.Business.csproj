@@ -8,8 +8,4 @@
       <ProjectReference Include="..\OTProje.ToDo.DataAccess\OTProje.ToDo.DataAccess.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Concrete" />
-    </ItemGroup>
-
 </Project>
