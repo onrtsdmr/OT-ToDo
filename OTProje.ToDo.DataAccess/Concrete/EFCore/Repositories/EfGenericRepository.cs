@@ -12,45 +12,35 @@ namespace OTProje.ToDo.DataAccess.Concrete.EFCore.Repositories
     {
         public void Create(TEntity entity)
         {
-            using (var context = new TContext())
-            {
-                context.Add(entity);
-                context.SaveChanges();
-            }
+            using var context = new TContext();
+            context.Add(entity);
+            context.SaveChanges();
         }
 
         public void Delete(TEntity entity)
         {
-            using (var context = new TContext())
-            {
-                context.Remove(entity);
-                context.SaveChanges();
-            }
+            using var context = new TContext();
+            context.Remove(entity);
+            context.SaveChanges();
         }
 
         public void Update(TEntity entity)
         {
-            using (var context = new TContext())
-            {
-                context.Entry(entity).State = EntityState.Modified;
-                context.SaveChanges();
-            }
+            using var context = new TContext();
+            context.Entry(entity).State = EntityState.Modified;
+            context.SaveChanges();
         }
 
         public TEntity GetById(int id)
         {
-            using (var context = new TContext())
-            {
-                return context.Set<TEntity>().Find(id);
-            }
+            using var context = new TContext();
+            return context.Set<TEntity>().Find(id);
         }
 
         public List<TEntity> GetAll()
         {
-            using (var context = new TContext())
-            {
-                return context.Set<TEntity>().ToList();
-            }
+            using var context = new TContext();
+            return context.Set<TEntity>().ToList();
         }
     }
 }

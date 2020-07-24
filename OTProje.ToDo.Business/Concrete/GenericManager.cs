@@ -11,7 +11,7 @@ namespace OTProje.ToDo.Business.Concrete
 
         public GenericManager(IGenericDal<TEntity> genericDal)
         {
-            this._genericDal = genericDal;
+            _genericDal = genericDal;
         }
         
         public void Create(TEntity entity)

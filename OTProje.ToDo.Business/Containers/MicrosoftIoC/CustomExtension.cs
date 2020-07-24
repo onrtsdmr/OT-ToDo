@@ -1,12 +1,10 @@
-﻿using FluentValidation;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using OTProje.ToDo.Business.Concrete;
-using OTProje.ToDo.Business.FluentValidation;
 using OTProje.ToDo.Business.Interfaces;
 using OTProje.ToDo.DataAccess.Concrete.EFCore.Repositories;
 using OTProje.ToDo.DataAccess.Interfaces;
 
-namespace OTProje.ToDo.Business.CustomExtensions
+namespace OTProje.ToDo.Business.Containers.MicrosoftIoC
 {
     public static class CustomExtension
     {
@@ -20,8 +18,6 @@ namespace OTProje.ToDo.Business.CustomExtensions
 
             services.AddScoped<IToDoDal, EfToDoRepository>();
             services.AddScoped<IUserDal, EfUserRepository>();
-
-            services.AddTransient<IValidator<Entities.Concrete.ToDo>, ToDoAddDtoValidator>();
         }
     }
 }

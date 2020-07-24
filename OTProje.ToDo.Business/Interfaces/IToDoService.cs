@@ -2,7 +2,7 @@
 
 namespace OTProje.ToDo.Business.Interfaces
 {
-    public interface IToDoService: IGenericService<User>
+    public interface IToDoService: IGenericService<Entities.Concrete.ToDo>
     {
         
     }

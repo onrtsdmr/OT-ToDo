@@ -4,7 +4,7 @@ using OTProje.ToDo.Entities.Concrete;
 
 namespace OTProje.ToDo.Business.Concrete
 {
-    public class UserManager: GenericManager<User>
+    public class UserManager: GenericManager<User>, IUserService
     {
         public UserManager(IGenericDal<User> genericDal) : base(genericDal)
         {

@@ -8,4 +8,8 @@
       <ProjectReference Include="..\OTProje.ToDo.DataAccess\OTProje.ToDo.DataAccess.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="FluentValidation.AspNetCore" Version="9.0.1" />
+    </ItemGroup>
+
 </Project>
